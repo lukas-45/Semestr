@@ -1,0 +1,110 @@
+{% extends 'sablona1.twig' %}
+{% block title %}Registrace{% endblock %}
+{% block head %}
+    <link href="../public/css/blog.css" rel="stylesheet">
+{% endblock %}
+{% block hlavni %}
+    <form class="form-horizontal" action="{{ makeUrl('registrace') }}" method="POST">
+        <fieldset>
+            <div id="legend">
+                <legend class=blog-post-title">Registrace</legend>
+
+            </div>
+            <div class="control-group">
+                <!-- Username -->
+                <label class="control-label"  for="txt_unick">Uživatelské jméno**</label>
+                <div class="controls">
+                    <input type="text" id="login-form-username" name="txt_unick" placeholder="" class="input-xlarge" required>
+                    <p class="help-block">Uživatelské jméno, které budete používat při přihlašování</p>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <!-- Username -->
+                <label class="control-label"  for="txt_uname">Křestní jméno**</label>
+                <div class="controls">
+                    <input type="text" id="login-form-name" name="txt_uname" placeholder="" class="input-xlarge" required>
+                    <p class="help-block">Zadejte Vaše křestní jméno</p>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <!-- Username -->
+                <label class="control-label"  for="txt_usurname">Příjmení**</label>
+                <div class="controls">
+                    <input type="text" id="login-form-surname" name="txt_usurname" placeholder="" class="input-xlarge" required>
+                    <p class="help-block">Zadejte Vaše příjmení</p>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <!-- E-mail -->
+                <label class="control-label" for="txt_umail">E-mail**</label>
+                <div class="controls">
+                    <input type="email" id="login-form-email" name="txt_umail" placeholder="" class="input-xlarge" required>
+                    <p class="help-block">Napište e-mail</p>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <!-- Password-->
+                <label class="control-label" for="txt_upass">Heslo**</label>
+                <div class="controls">
+                    <input type="password" id="password" name="txt_upass" placeholder="" class="input-xlarge" required>
+                    <p class="help-block">Zadejte heslo</p>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <!-- Password -->
+                <label class="control-label"  for="txt_upass2">Heslo (Potvrzovací)**</label>
+                <div class="controls">
+                    <input type="password" id="login-form-heslo2" name="txt_upass2" placeholder="" class="input-xlarge" required>
+                    <p class="help-block">Potvrzení hesla</p>
+                </div>
+            </div>
+            <input type="hidden" name="heslo" id="passh">
+            <div>
+                <p>Textová pole označená ** jsou povinná</p>
+            </div>
+
+            <div class="control-group">
+                <!-- Button -->
+                <div class="controls">
+                    <button class="btn btn-success" id="login-btn" name="login-btn">Registrovat</button>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+{% endblock %}
+{% block scripts %}
+    <script type="text/javascript" src="http://cryptojs.altervista.org/api/functions_cryptography.js"></script>
+    <script>
+        var Crypt = new Crypt();
+        $(document).ready(function () {
+            $('#login-btn').click(function () {
+                var heslo = $("#login-form").find("input[name=heslo]");
+                var passh = Crypt.HASH.sha1(heslo.val());
+                $("#passh").val(passh.toString());
+            });
+            $("#login-form").validate({
+                rules: {
+                    'username': "required",
+                    'name': "required",
+                    'surname': "required",
+                    'email': "required",
+                    heslo: {
+                        required: true,
+                        minlength: 8
+                    },
+                    heslo2: {
+                        required: true,
+                        equalTo: "#password"
+                    }
+                }
+            });
+        });
+    </script>
+
+{% endblock %}
+
