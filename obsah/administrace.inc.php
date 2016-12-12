@@ -14,8 +14,7 @@
 
     $cont = new control();
 
-
-
+    $count = 0;
     $uzivatele = new DBUzivatele();
     $uzivatele->Connect();
     $autori = $uzivatele->LoadAutoriUzivatele();
@@ -37,6 +36,7 @@
                 <th>Autor</th>
                 <th>Přiřadit</th>
                 <th>Schváleno</th>
+                <th>Hodnocení</th>
                 <th>Vymazat</th>
               </tr>
             </thead>
@@ -48,8 +48,34 @@
                             <td>$nacteni_prispevku[nazev]</td>
                             <td>$autori[jmeno] $autori[prijmeni]</td>    
                             <td><a href=  \"" . $cont->makeUrl('pridat;' . $nacteni_prispevku["nazev"] . ';' . $autori["id_uzivatel"]) . "\"  style='color: green'  ><span class=\"glyphicon glyphicon-share-alt\"></span> přidat uživateli </a></td>
-                            <td><a href=  \"" . $cont->makeUrl('schvalit;' . $nacteni_prispevku["nazev"] . ';' . $autori["id_uzivatel"]) . "\"   ><span class=\"glyphicon glyphicon-ok\"></span> $nacteni_prispevku[schvaleno] </a></td>
-                            <td><a data-confirm=\"Are you sure?\" data-method=\"delete\" href= \"" . $cont->makeUrl('odstraneni_admin;' . $nacteni_prispevku["nazev"] . ';' . $autori["id_uzivatel"]) . "\"   rel=\"nofollow\" style='color: red'  ><span class=\"glyphicon glyphicon-remove-sign\"></span> smazat</a></td>
+                            <td><a href=  \"" . $cont->makeUrl('schvalit;' . $nacteni_prispevku["nazev"] . ';' . $autori["id_uzivatel"]) . "\"   ><span class=\"glyphicon glyphicon-ok\"></span> $nacteni_prispevku[schvaleno] </a></td>";
+                        $prumer = 0;
+                        $count = 0;
+                        $hodnoceni = new hodnoceni();
+                        $hodnoceni->Connect();
+                        $nacteni_hodnoceni = $hodnoceni->LoadAllHodnoceni();
+                        if ($nacteni_hodnoceni != null) {
+                            foreach ($nacteni_hodnoceni as $nacteni_hodnoceni) {
+                                if(($nacteni_prispevku["id_clanky"] == $nacteni_hodnoceni["clanky_id_clanky"])){
+                                    if($nacteni_hodnoceni["body1"] != null){
+                                        $count++;
+                                        $prumer = $prumer + (($nacteni_hodnoceni["body1"]+$nacteni_hodnoceni["body2"]+$nacteni_hodnoceni["body3"])/3);
+
+
+                                    }
+
+                                }
+                            }
+                        }
+                        if($count > 2) {
+                            $prumer = round($prumer/$count,2);
+                            echo " <td>$prumer</td>";
+                        }
+                        else{
+
+                            echo " <td>Nehodnoceno</td>";
+                        }
+                        echo  "<td><a data-confirm=\"Are you sure?\" data-method=\"delete\" href= \"" . $cont->makeUrl('odstraneni_admin;' . $nacteni_prispevku["nazev"] . ';' . $autori["id_uzivatel"]) . "\"   rel=\"nofollow\" style='color: red'  ><span class=\"glyphicon glyphicon-remove-sign\"></span> smazat</a></td>
                             </tr>";
 
 
@@ -82,6 +108,7 @@ if ($recenzenti != null) {
                 <th>Originalita</th>
                 <th>Téma</th>
                 <th>Kvalita</th>
+                <th>Průměrná známka</th>
               </tr>
             </thead>
             <tbody>";
@@ -95,12 +122,14 @@ if ($recenzenti != null) {
                         if(($recenzenti["id_uzivatel"] == $nacteni_hodnoceni["id_recenzenta"]) && ($nacteni_prispevku["id_clanky"] == $nacteni_hodnoceni["clanky_id_clanky"])){
 
                             if($nacteni_hodnoceni["body1"] != null){
+                                $prumer = round(($nacteni_hodnoceni["body1"]+$nacteni_hodnoceni["body2"]+$nacteni_hodnoceni["body3"])/3,2);
                                 echo "  <tr>
                                 <td>$nacteni_prispevku[nazev]</td>
                                 <td>$autori[jmeno] $autori[prijmeni]</td>    
                                 <td>$nacteni_hodnoceni[body1]</td>
                                 <td>$nacteni_hodnoceni[body2]</td>
                                 <td>$nacteni_hodnoceni[body3]</td>
+                                <td><strong>$prumer</strong></td>
                                 </tr>";
                             }
 
