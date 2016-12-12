@@ -19,8 +19,7 @@ $subpage = @$_REQUEST["subpage"];
 
 
 
-
-if(isset($_POST["prispevek"])) {
+    if(isset($_POST["prispevek"])) {
     $newPrispevek = new Prispevky();
     $newPrispevek->Connect();
     $uzivatel = $_SESSION['uzivatel'];
@@ -28,6 +27,12 @@ if(isset($_POST["prispevek"])) {
     $items["nazev"] = $_POST["name"];
     $items["abstrakt"] = $_POST["abstract"];
     $items["autor_id"] = $uzivatel['id_uzivatel'];
+        $file = array();
+        $file = $_FILES['file1'];
+
+      //  echo '<pre>';
+     //  print_r($_FILES);
+       // print_r($_POST);
     $nacteni_prispevku = $newPrispevek->LoadAllPrispevky();
     $pLength = strlen($items["nazev"]);
 
@@ -36,6 +41,7 @@ if(isset($_POST["prispevek"])) {
         if ($nacteni_prispevku != null) {
             foreach ($nacteni_prispevku as $nacteni_prispevku) {
                 if ($nacteni_prispevku["nazev"] == $items["nazev"] && $nacteni_prispevku["autor_id"] == $items["autor_id"]) {
+
                     if($subpage == $nacteni_prispevku["nazev"]) {
 
                     }
@@ -63,8 +69,14 @@ if(isset($_POST["prispevek"])) {
         else if ($bool)
         {
             if(isset($subpage)){
+                if($_FILES["file1"]["tmp_name"]!=null) {
+                    move_uploaded_file($_FILES["file1"]["tmp_name"], "public/pdf/" . $_FILES["file1"]["name"]);
+                    rename("public/pdf/" .$_FILES["file1"]["name"], "public/pdf/" .$nacteni_prispevku["id_clanky"].".pdf");
+                }
                 $novy = $newPrispevek->UpdateClanku($items["abstrakt"], $items["autor_id"],$subpage);
                 $novy2 = $newPrispevek->UpdatePrispevku($items["nazev"], $items["autor_id"],$subpage);
+
+
                 $cont->makeUrl('odstraneni;'.$items["nazev"]);
                 header('Location: '.$cont->makeUrl('odstraneni;'.$nacteni_prispevku["nazev"]));
                header('Location: '.$cont->makeUrl('mojeprispevky'));
@@ -74,6 +86,11 @@ if(isset($_POST["prispevek"])) {
                 </div>";
             }
             else {
+                if($_FILES["file1"]["tmp_name"]!=null) {
+                    move_uploaded_file($_FILES["file1"]["tmp_name"], "public/pdf/" . $_FILES["file1"]["name"]);
+                    rename("public/pdf/" .$_FILES["file1"]["name"], "public/pdf/" .$nacteni_prispevku["id_clanky"].".pdf");
+                }
+
                 $novy = $newPrispevek->InsertPrispevku($items);
                 echo "<div class=\"alert alert-success alert-dismissable fade in\">
                 <a href=\"#\" class=\"close\" data-dismiss=\"alert\" aria-label=\"close\">&times;</a>
@@ -84,13 +101,11 @@ if(isset($_POST["prispevek"])) {
         }
 
 
-
-
 }
-if(isset($subpage)){
+        if(isset($subpage)){
             echo "<div class=\"container\">
             <h3>Úprava příspěvku</h3>
-          <form method='post'>
+          <form method='post'  enctype=\"multipart/form-data\">
            <div class=\"form-group\">
             <label for=\"exampleInputEmail1\">Název příspěvku **</label>
             <input type=\"text\" class=\"form-control\" id=\"exampleInputText\" name='name'  value=\"$subpage\"placeholder=\"Název\" required>
@@ -115,7 +130,7 @@ if(isset($subpage)){
           echo "</div>
           <div class=\"form-group\">
             <label for=\"exampleInputFile\">Přiložit soubor</label>
-            <input type=\"file\" class=\"form-control-file\" id=\"exampleInputFile\" aria-describedby=\"fileHelp\">
+            <input type=\"file\" name='file1' class=\"form-control-file\" id=\"exampleInputFile\" aria-describedby=\"fileHelp\"  >
             <small id=\"fileHelp\" class=\"form-text text-muted\">Zde můžete přidat pdf soubor</small>
           </div>
           <div>
@@ -125,11 +140,11 @@ if(isset($subpage)){
         </form>
         </div>";
 
-}
-else{
-    echo "<div class=\"container\">
+    }
+    else{
+        echo "<div class=\"container\">
         <h3>Vytvoření příspěvku</h3>
-        <form method='post'>
+        <form method='post'  enctype=\"multipart/form-data\">
         <div class=\"form-group\">
         <label for=\"exampleInputEmail1\">Název příspěvku **</label>
         <input type=\"text\" class=\"form-control\" id=\"exampleInputText\" name='name'  placeholder=\"Název\" required>
@@ -140,7 +155,7 @@ else{
       </div>
       <div class=\"form-group\">
         <label for=\"exampleInputFile\">Přiložit soubor</label>
-        <input type=\"file\" class=\"form-control-file\" id=\"exampleInputFile\" aria-describedby=\"fileHelp\">
+        <input type=\"file\" class=\"form-control-file\" name='file1' id=\"exampleInputFile\" aria-describedby=\"fileHelp\">
         <small id=\"fileHelp\" class=\"form-text text-muted\">Zde můžete přidat pdf soubor</small>
       </div>
       <div>

@@ -120,18 +120,28 @@ if ($recenzenti != null) {
                 if ($nacteni_hodnoceni != null) {
                     foreach ($nacteni_hodnoceni as $nacteni_hodnoceni) {
                         if(($recenzenti["id_uzivatel"] == $nacteni_hodnoceni["id_recenzenta"]) && ($nacteni_prispevku["id_clanky"] == $nacteni_hodnoceni["clanky_id_clanky"])){
-
-                            if($nacteni_hodnoceni["body1"] != null){
-                                $prumer = round(($nacteni_hodnoceni["body1"]+$nacteni_hodnoceni["body2"]+$nacteni_hodnoceni["body3"])/3,2);
-                                echo "  <tr>
-                                <td>$nacteni_prispevku[nazev]</td>
-                                <td>$autori[jmeno] $autori[prijmeni]</td>    
-                                <td>$nacteni_hodnoceni[body1]</td>
-                                <td>$nacteni_hodnoceni[body2]</td>
-                                <td>$nacteni_hodnoceni[body3]</td>
-                                <td><strong>$prumer</strong></td>
-                                </tr>";
+                            $uzivatele = new DBUzivatele();
+                            $uzivatele->Connect();
+                            $autori = $uzivatele->LoadAutoriUzivatele();
+                            if ($autori != null) {
+                                foreach ($autori as $autori) {
+                                    if($nacteni_hodnoceni["body1"] != null){
+                                        $prumer = round(($nacteni_hodnoceni["body1"]+$nacteni_hodnoceni["body2"]+$nacteni_hodnoceni["body3"])/3,2);
+                                        if($nacteni_hodnoceni["uzivatel_id_uzivatel"] == $autori["id_uzivatel"]){
+                                        echo "  <tr>
+                                        <td>$nacteni_prispevku[nazev]</td>
+                                        <td>$autori[jmeno] $autori[prijmeni]</td>
+                                        <td>$nacteni_hodnoceni[body1]</td>
+                                        <td>$nacteni_hodnoceni[body2]</td>
+                                        <td>$nacteni_hodnoceni[body3]</td>
+                                        <td><strong>$prumer</strong></td>
+                                        </tr>";
+                                        }
+                                    }
+                                }
                             }
+
+
 
                         }
                     }
