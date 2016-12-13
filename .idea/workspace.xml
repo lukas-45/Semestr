@@ -29,161 +29,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="odstraneni_prispevku.inc.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/obsah/odstraneni_prispevku.inc.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pridani_k_recenzi.inc.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/obsah/pridani_k_recenzi.inc.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="797">
-              <caret line="94" column="28" selection-start-line="94" selection-start-column="28" selection-end-line="94" selection-end-column="28" />
-              <folding>
-                <marker date="1481318927287" expanded="true" signature="2117:2453" ph="..." />
-                <marker date="1481318927287" expanded="true" signature="2117:2504" ph="..." />
-                <marker date="1481318927287" expanded="true" signature="2170:2269" ph="..." />
-                <marker date="1481318927287" expanded="true" signature="2170:2299" ph="..." />
-                <marker date="1481318927287" expanded="true" signature="2170:2418" ph="..." />
-                <marker date="1481318927287" expanded="true" signature="2634:2869" ph="..." />
-                <marker date="1481318927287" expanded="true" signature="2634:2884" ph="..." />
-                <marker date="1481318927287" expanded="true" signature="2634:2888" ph="..." />
-                <marker date="1481318927287" expanded="true" signature="2676:2869" ph="..." />
-                <marker date="1481318927287" expanded="true" signature="2719:2869" ph="..." />
-                <marker date="1481318927287" expanded="true" signature="3276:3592" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="registrace.inc.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/obsah/registrace.inc.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="797">
-              <caret line="184" column="56" selection-start-line="184" selection-start-column="56" selection-end-line="184" selection-end-column="56" />
-              <folding>
-                <marker date="1481018714541" expanded="true" signature="1046:1384" ph="..." />
-                <marker date="1481018714541" expanded="true" signature="2545:2884" ph="..." />
-                <marker date="1481018714541" expanded="true" signature="2637:2644" ph="×" />
-                <marker date="1481018714541" expanded="true" signature="3016:3319" ph="..." />
-                <marker date="1481018714541" expanded="true" signature="3108:3115" ph="×" />
-                <marker date="1481018714541" expanded="true" signature="3604:3868" ph="..." />
-                <marker date="1481018714541" expanded="true" signature="3696:3703" ph="×" />
-                <marker date="1481018714541" expanded="true" signature="4053:4294" ph="..." />
-                <marker date="1481018714541" expanded="true" signature="4145:4152" ph="×" />
-                <marker date="1481018714541" expanded="true" signature="4546:4716" ph="..." />
-                <marker date="1481018714541" expanded="true" signature="4626:4633" ph="×" />
-                <marker date="1481018714541" expanded="true" signature="4827:5001" ph="..." />
-                <marker date="1481018714541" expanded="true" signature="4907:4914" ph="×" />
-                <marker date="1481018714541" expanded="true" signature="5079:8447" ph="..." />
-                <marker date="1481018714541" expanded="true" signature="5098:8435" ph="..." />
-                <marker date="1481018714541" expanded="true" signature="5130:5218" ph="..." />
-                <marker date="1481018714541" expanded="true" signature="5260:5714" ph="..." />
-                <marker date="1481018714541" expanded="true" signature="5429:5695" ph="..." />
-                <marker date="1481018714541" expanded="true" signature="5757:6176" ph="..." />
-                <marker date="1481018714541" expanded="true" signature="5926:6157" ph="..." />
-                <marker date="1481018714541" expanded="true" signature="6219:6633" ph="..." />
-                <marker date="1481018714541" expanded="true" signature="6382:6614" ph="..." />
-                <marker date="1481018714541" expanded="true" signature="6676:7071" ph="..." />
-                <marker date="1481018714541" expanded="true" signature="6831:7052" ph="..." />
-                <marker date="1481018714541" expanded="true" signature="7114:7503" ph="..." />
-                <marker date="1481018714541" expanded="true" signature="7269:7484" ph="..." />
-                <marker date="1481018714541" expanded="true" signature="7546:7964" ph="..." />
-                <marker date="1481018714541" expanded="true" signature="7718:7945" ph="..." />
-                <marker date="1481018714541" expanded="true" signature="8046:8145" ph="..." />
-                <marker date="1481018714541" expanded="true" signature="8074:8084" ph="..." />
-                <marker date="1481018714541" expanded="true" signature="8188:8415" ph="..." />
-                <marker date="1481018714541" expanded="true" signature="8261:8396" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="prispevky.inc.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/obsah/prispevky.inc.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="757">
-              <caret line="78" column="37" selection-start-line="78" selection-start-column="37" selection-end-line="78" selection-end-column="37" />
-              <folding>
-                <marker date="1481625588037" expanded="true" signature="825:965" ph="..." />
-                <marker date="1481625588037" expanded="true" signature="1466:1717" ph="..." />
-                <marker date="1481625588037" expanded="true" signature="1564:1571" ph="×" />
-                <marker date="1481625588037" expanded="true" signature="1911:2121" ph="..." />
-                <marker date="1481625588037" expanded="true" signature="2003:2010" ph="×" />
-                <marker date="1481625588037" expanded="true" signature="3508:3716" ph="..." />
-                <marker date="1481625588037" expanded="true" signature="3600:3607" ph="×" />
-                <marker date="1481625588037" expanded="true" signature="4186:4395" ph="..." />
-                <marker date="1481625588037" expanded="true" signature="4278:4285" ph="×" />
-                <marker date="1481625588037" expanded="true" signature="4499:4561" ph="..." />
-                <marker date="1481625588037" expanded="true" signature="4499:6315" ph="..." />
-                <marker date="1481625588037" expanded="true" signature="4601:4982" ph="..." />
-                <marker date="1481625588037" expanded="true" signature="4601:6300" ph="..." />
-                <marker date="1481625588037" expanded="true" signature="4639:4798" ph="..." />
-                <marker date="1481625588037" expanded="true" signature="4639:4872" ph="..." />
-                <marker date="1481625588037" expanded="true" signature="4909:4982" ph="..." />
-                <marker date="1481625588037" expanded="true" signature="5755:5862" ph="..." />
-                <marker date="1481625588037" expanded="true" signature="5755:5953" ph="..." />
-                <marker date="1481625588037" expanded="true" signature="5755:6074" ph="..." />
-                <marker date="1481625588037" expanded="true" signature="6090:6115" ph="..." />
-                <marker date="1481625588037" expanded="true" signature="6090:6186" ph="..." />
-                <marker date="1481625588037" expanded="false" signature="6117:6127" ph="..." />
-                <marker date="1481625588037" expanded="true" signature="6374:6433" ph="..." />
-                <marker date="1481625588037" expanded="true" signature="6374:6439" ph="..." />
-                <marker date="1481625588037" expanded="true" signature="6374:7486" ph="..." />
-                <marker date="1481625588037" expanded="true" signature="6473:7475" ph="..." />
-                <marker date="1481625588037" expanded="true" signature="6508:6659" ph="..." />
-                <marker date="1481625588037" expanded="true" signature="6508:6711" ph="..." />
-                <marker date="1481625588037" expanded="true" signature="6744:6890" ph="..." />
-                <marker date="1481625588037" expanded="true" signature="6744:6934" ph="..." />
-                <marker date="1481625588037" expanded="true" signature="6967:7094" ph="..." />
-                <marker date="1481625588037" expanded="true" signature="6967:7268" ph="..." />
-                <marker date="1481625588037" expanded="true" signature="7280:7301" ph="..." />
-                <marker date="1481625588037" expanded="true" signature="7280:7368" ph="..." />
-                <marker date="1481625588037" expanded="false" signature="7303:7313" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="schvaleni.inc.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/obsah/schvaleni.inc.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hodnoceni.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/inc/hodnoceni.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="511">
-              <caret line="31" column="110" selection-start-line="31" selection-start-column="110" selection-end-line="31" selection-end-column="110" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Prispevky.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/inc/Prispevky.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
-              <caret line="44" column="39" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="db_pdo.class.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="db_pdo.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/inc/db_pdo.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
+            <state relative-caret-position="468">
               <caret line="526" column="0" selection-start-line="526" selection-start-column="0" selection-end-line="526" selection-end-column="0" />
               <folding>
                 <marker date="1481325542947" expanded="true" signature="2011:2075" ph="select ${$se... ${$table_name}" />
@@ -214,33 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="moje_prispevky.inc.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/obsah/moje_prispevky.inc.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="638">
-              <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
-              <folding>
-                <marker date="1481116285994" expanded="true" signature="464:497" ph="..." />
-                <marker date="1481116285994" expanded="true" signature="464:1606" ph="..." />
-                <marker date="1481116285994" expanded="true" signature="577:733" ph="..." />
-                <marker date="1481116285994" expanded="true" signature="577:1599" ph="..." />
-                <marker date="1481116285994" expanded="true" signature="589:721" ph="..." />
-                <marker date="1481116285994" expanded="true" signature="600:708" ph="..." />
-                <marker date="1481116285994" expanded="true" signature="930:1052" ph="..." />
-                <marker date="1481116285994" expanded="true" signature="930:1088" ph="..." />
-                <marker date="1481116285994" expanded="true" signature="930:1534" ph="..." />
-                <marker date="1481116285994" expanded="true" signature="1160:1172" ph="..." />
-                <marker date="1481116285994" expanded="true" signature="1424:1434" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="administrace.inc.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/obsah/administrace.inc.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="823">
-              <caret line="73" column="29" selection-start-line="73" selection-start-column="29" selection-end-line="73" selection-end-column="29" />
+            <state relative-caret-position="427">
+              <caret line="60" column="49" selection-start-line="60" selection-start-column="49" selection-end-line="60" selection-end-column="49" />
               <folding>
                 <element signature="e#6#87#0#PHP" expanded="true" />
                 <marker date="1481567225876" expanded="true" signature="811:1235" ph="..." />
@@ -256,6 +83,80 @@
                 <marker date="1481567225876" expanded="true" signature="4222:4445" ph="..." />
                 <marker date="1481567225876" expanded="true" signature="5738:6240" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Prispevky.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/inc/Prispevky.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="521">
+              <caret line="44" column="39" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="schvaleni.inc.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/obsah/schvaleni.inc.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="kontakt.inc.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/obsah/kontakt.inc.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="17" column="390" selection-start-line="17" selection-start-column="390" selection-end-line="17" selection-end-column="390" />
+              <folding>
+                <marker date="1481628810735" expanded="true" signature="41:974" ph="..." />
+                <marker date="1481628810735" expanded="true" signature="928:936" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="291">
+              <caret line="86" column="29" selection-start-line="86" selection-start-column="29" selection-end-line="86" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="menu.inc.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/obsah/menu.inc.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1219">
+              <caret line="111" column="96" selection-start-line="111" selection-start-column="96" selection-end-line="111" selection-end-column="96" />
+              <folding>
+                <marker date="1481628355130" expanded="true" signature="1478:1956" ph="..." />
+                <marker date="1481628355130" expanded="true" signature="1518:1956" ph="..." />
+                <marker date="1481628355130" expanded="true" signature="1595:1708" ph="..." />
+                <marker date="1481628355130" expanded="true" signature="1750:1956" ph="..." />
+                <marker date="1481628355130" expanded="true" signature="3504:3846" ph="..." />
+                <marker date="1481628355130" expanded="true" signature="4296:4796" ph="..." />
+                <marker date="1481628355130" expanded="true" signature="4336:4796" ph="..." />
+                <marker date="1481628355130" expanded="true" signature="4413:4526" ph="..." />
+                <marker date="1481628355130" expanded="true" signature="4568:4796" ph="..." />
+                <marker date="1481628355130" expanded="true" signature="4868:5180" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sablona1.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sablony/sablona1.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-167">
+              <caret line="55" column="19" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -282,8 +183,6 @@
         <option value="$PROJECT_DIR$/sablony/session.php" />
         <option value="$PROJECT_DIR$/sablony/registrace.php" />
         <option value="$PROJECT_DIR$/sablony/registrace.twig" />
-        <option value="$PROJECT_DIR$/obsah/kontakt.inc.php" />
-        <option value="$PROJECT_DIR$/obsah/konference.php" />
         <option value="$PROJECT_DIR$/sablony/uvod.twig" />
         <option value="$PROJECT_DIR$/sablony/404.twig" />
         <option value="$PROJECT_DIR$/inc/inc/uzivatele.class.php" />
@@ -312,17 +211,19 @@
         <option value="$PROJECT_DIR$/obsah/odstranit_recenzi.inc.php" />
         <option value="$PROJECT_DIR$/inc/hodnoceni.class.php" />
         <option value="$PROJECT_DIR$/obsah/hodnotit.inc.php" />
-        <option value="$PROJECT_DIR$/obsah/menu.inc.php" />
         <option value="$PROJECT_DIR$/obsah/prihlaseni.inc.php" />
         <option value="$PROJECT_DIR$/obsah/odstraneni_prispevku.inc.php" />
         <option value="$PROJECT_DIR$/obsah/odstraneni_admin.inc.php" />
         <option value="$PROJECT_DIR$/obsah/administrace.inc.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/obsah/prispevky.inc.php" />
         <option value="$PROJECT_DIR$/obsah/uvod.inc.php" />
         <option value="$PROJECT_DIR$/obsah/otevritPDF.php" />
         <option value="$PROJECT_DIR$/obsah/schvaleni.inc.php" />
         <option value="$PROJECT_DIR$/inc/db_pdo.class.php" />
+        <option value="$PROJECT_DIR$/obsah/konference.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/obsah/menu.inc.php" />
+        <option value="$PROJECT_DIR$/obsah/kontakt.inc.php" />
       </list>
     </option>
   </component>
@@ -590,12 +491,12 @@
       <workItem from="1481372286484" duration="627000" />
       <workItem from="1481531587483" duration="2259000" />
       <workItem from="1481554447402" duration="16447000" />
-      <workItem from="1481620785622" duration="6459000" />
+      <workItem from="1481620785622" duration="8005000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="277099000" />
+    <option name="totallyTimeSpent" value="278645000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
@@ -720,14 +621,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sablony/sablona1.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/picture/user1.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -822,19 +715,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/obsah/konference.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
-          <folding>
-            <marker date="1480599271075" expanded="true" signature="41:2720" ph="..." />
-            <marker date="1480599271075" expanded="true" signature="588:791" ph="..." />
-            <marker date="1480599271075" expanded="true" signature="1966:2204" ph="..." />
-            <marker date="1480599271075" expanded="true" signature="2327:2603" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/obsah/odhlaseni.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -899,50 +779,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/obsah/menu.inc.php">
+    <entry file="file://$PROJECT_DIR$/obsah/uvod.inc.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="61" column="85" selection-start-line="61" selection-start-column="54" selection-end-line="61" selection-end-column="85" />
+        <state relative-caret-position="242">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
           <folding>
-            <marker date="1481531649615" expanded="true" signature="1478:1964" ph="..." />
-            <marker date="1481531649615" expanded="true" signature="1518:1964" ph="..." />
-            <marker date="1481531649615" expanded="true" signature="1595:1708" ph="..." />
-            <marker date="1481531649615" expanded="true" signature="1750:1964" ph="..." />
-            <marker date="1481531649615" expanded="true" signature="3512:3854" ph="..." />
-            <marker date="1481531649615" expanded="true" signature="4304:4812" ph="..." />
-            <marker date="1481531649615" expanded="true" signature="4344:4812" ph="..." />
-            <marker date="1481531649615" expanded="true" signature="4421:4534" ph="..." />
-            <marker date="1481531649615" expanded="true" signature="4576:4812" ph="..." />
-            <marker date="1481531649615" expanded="true" signature="4884:5196" ph="..." />
+            <marker date="1481626400260" expanded="true" signature="340:1712" ph="..." />
+            <marker date="1481626400260" expanded="true" signature="585:1618" ph="..." />
+            <marker date="1481626400260" expanded="true" signature="1318:1618" ph="..." />
+            <marker date="1481626400260" expanded="true" signature="1414:1599" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/obsah/otevritPDF.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="653">
-          <caret line="73" column="37" selection-start-line="73" selection-start-column="37" selection-end-line="73" selection-end-column="37" />
+        <state relative-caret-position="418">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/obsah/pridani_k_recenzi.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="797">
-          <caret line="94" column="28" selection-start-line="94" selection-start-column="28" selection-end-line="94" selection-end-column="28" />
-          <folding>
-            <marker date="1481318927287" expanded="true" signature="2117:2453" ph="..." />
-            <marker date="1481318927287" expanded="true" signature="2117:2504" ph="..." />
-            <marker date="1481318927287" expanded="true" signature="2170:2269" ph="..." />
-            <marker date="1481318927287" expanded="true" signature="2170:2299" ph="..." />
-            <marker date="1481318927287" expanded="true" signature="2170:2418" ph="..." />
-            <marker date="1481318927287" expanded="true" signature="2634:2869" ph="..." />
-            <marker date="1481318927287" expanded="true" signature="2634:2884" ph="..." />
-            <marker date="1481318927287" expanded="true" signature="2634:2888" ph="..." />
-            <marker date="1481318927287" expanded="true" signature="2676:2869" ph="..." />
-            <marker date="1481318927287" expanded="true" signature="2719:2869" ph="..." />
-            <marker date="1481318927287" expanded="true" signature="3276:3592" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -987,58 +841,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/obsah/uvod.inc.php">
+    <entry file="file://$PROJECT_DIR$/obsah/pridani_k_recenzi.inc.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+        <state relative-caret-position="797">
+          <caret line="94" column="28" selection-start-line="94" selection-start-column="28" selection-end-line="94" selection-end-column="28" />
           <folding>
-            <marker date="1481626400260" expanded="true" signature="340:1712" ph="..." />
-            <marker date="1481626400260" expanded="true" signature="585:1618" ph="..." />
-            <marker date="1481626400260" expanded="true" signature="1318:1618" ph="..." />
-            <marker date="1481626400260" expanded="true" signature="1414:1599" ph="..." />
+            <marker date="1481318927287" expanded="true" signature="2117:2453" ph="..." />
+            <marker date="1481318927287" expanded="true" signature="2117:2504" ph="..." />
+            <marker date="1481318927287" expanded="true" signature="2170:2269" ph="..." />
+            <marker date="1481318927287" expanded="true" signature="2170:2299" ph="..." />
+            <marker date="1481318927287" expanded="true" signature="2170:2418" ph="..." />
+            <marker date="1481318927287" expanded="true" signature="2634:2869" ph="..." />
+            <marker date="1481318927287" expanded="true" signature="2634:2884" ph="..." />
+            <marker date="1481318927287" expanded="true" signature="2634:2888" ph="..." />
+            <marker date="1481318927287" expanded="true" signature="2676:2869" ph="..." />
+            <marker date="1481318927287" expanded="true" signature="2719:2869" ph="..." />
+            <marker date="1481318927287" expanded="true" signature="3276:3592" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/obsah/otevritPDF.php">
+    <entry file="file://$PROJECT_DIR$/obsah/odstraneni_prispevku.inc.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+        <state relative-caret-position="264">
+          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/obsah/schvaleni.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/obsah/moje_prispevky.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
-          <folding>
-            <marker date="1481116285994" expanded="true" signature="464:497" ph="..." />
-            <marker date="1481116285994" expanded="true" signature="464:1606" ph="..." />
-            <marker date="1481116285994" expanded="true" signature="577:733" ph="..." />
-            <marker date="1481116285994" expanded="true" signature="577:1599" ph="..." />
-            <marker date="1481116285994" expanded="true" signature="589:721" ph="..." />
-            <marker date="1481116285994" expanded="true" signature="600:708" ph="..." />
-            <marker date="1481116285994" expanded="true" signature="930:1052" ph="..." />
-            <marker date="1481116285994" expanded="true" signature="930:1088" ph="..." />
-            <marker date="1481116285994" expanded="true" signature="930:1534" ph="..." />
-            <marker date="1481116285994" expanded="true" signature="1160:1172" ph="..." />
-            <marker date="1481116285994" expanded="true" signature="1424:1434" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/obsah/prispevky.inc.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="757">
+        <state relative-caret-position="493">
           <caret line="78" column="37" selection-start-line="78" selection-start-column="37" selection-end-line="78" selection-end-column="37" />
           <folding>
             <marker date="1481625588037" expanded="true" signature="825:965" ph="..." />
@@ -1080,36 +913,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/obsah/odstraneni_prispevku.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/obsah/administrace.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="823">
-          <caret line="73" column="29" selection-start-line="73" selection-start-column="29" selection-end-line="73" selection-end-column="29" />
-          <folding>
-            <element signature="e#6#87#0#PHP" expanded="true" />
-            <marker date="1481567225876" expanded="true" signature="811:1235" ph="..." />
-            <marker date="1481567225876" expanded="true" signature="936:1235" ph="..." />
-            <marker date="1481567225876" expanded="true" signature="956:1215" ph="..." />
-            <marker date="1481567225876" expanded="true" signature="975:1194" ph="..." />
-            <marker date="1481567225876" expanded="true" signature="1473:2089" ph="..." />
-            <marker date="1481567225876" expanded="false" signature="1761:1773" ph="..." />
-            <marker date="1481567225876" expanded="false" signature="3537:3547" ph="..." />
-            <marker date="1481567225876" expanded="true" signature="4043:4486" ph="..." />
-            <marker date="1481567225876" expanded="true" signature="4183:4486" ph="..." />
-            <marker date="1481567225876" expanded="true" signature="4203:4466" ph="..." />
-            <marker date="1481567225876" expanded="true" signature="4222:4445" ph="..." />
-            <marker date="1481567225876" expanded="true" signature="5738:6240" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/inc/hodnoceni.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="511">
@@ -1118,17 +921,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/inc/Prispevky.class.php">
+    <entry file="file://$PROJECT_DIR$/obsah/moje_prispevky.inc.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="44" column="39" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
-          <folding />
+        <state relative-caret-position="638">
+          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+          <folding>
+            <marker date="1481116285994" expanded="true" signature="464:497" ph="..." />
+            <marker date="1481116285994" expanded="true" signature="464:1606" ph="..." />
+            <marker date="1481116285994" expanded="true" signature="577:733" ph="..." />
+            <marker date="1481116285994" expanded="true" signature="577:1599" ph="..." />
+            <marker date="1481116285994" expanded="true" signature="589:721" ph="..." />
+            <marker date="1481116285994" expanded="true" signature="600:708" ph="..." />
+            <marker date="1481116285994" expanded="true" signature="930:1052" ph="..." />
+            <marker date="1481116285994" expanded="true" signature="930:1088" ph="..." />
+            <marker date="1481116285994" expanded="true" signature="930:1534" ph="..." />
+            <marker date="1481116285994" expanded="true" signature="1160:1172" ph="..." />
+            <marker date="1481116285994" expanded="true" signature="1424:1434" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/inc/db_pdo.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
+        <state relative-caret-position="468">
           <caret line="526" column="0" selection-start-line="526" selection-start-column="0" selection-end-line="526" selection-end-column="0" />
           <folding>
             <marker date="1481325542947" expanded="true" signature="2011:2075" ph="select ${$se... ${$table_name}" />
@@ -1154,6 +969,90 @@
             <marker date="1481325542947" expanded="true" signature="16552:16582" ph="delete from " />
             <marker date="1481325542947" expanded="true" signature="16552:16592" ph="delete from " />
             <marker date="1481325542947" expanded="true" signature="16552:16593" ph="delete from " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/Prispevky.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="521">
+          <caret line="44" column="39" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/obsah/administrace.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="60" column="49" selection-start-line="60" selection-start-column="49" selection-end-line="60" selection-end-column="49" />
+          <folding>
+            <element signature="e#6#87#0#PHP" expanded="true" />
+            <marker date="1481567225876" expanded="true" signature="811:1235" ph="..." />
+            <marker date="1481567225876" expanded="true" signature="936:1235" ph="..." />
+            <marker date="1481567225876" expanded="true" signature="956:1215" ph="..." />
+            <marker date="1481567225876" expanded="true" signature="975:1194" ph="..." />
+            <marker date="1481567225876" expanded="true" signature="1473:2089" ph="..." />
+            <marker date="1481567225876" expanded="false" signature="1761:1773" ph="..." />
+            <marker date="1481567225876" expanded="false" signature="3537:3547" ph="..." />
+            <marker date="1481567225876" expanded="true" signature="4043:4486" ph="..." />
+            <marker date="1481567225876" expanded="true" signature="4183:4486" ph="..." />
+            <marker date="1481567225876" expanded="true" signature="4203:4466" ph="..." />
+            <marker date="1481567225876" expanded="true" signature="4222:4445" ph="..." />
+            <marker date="1481567225876" expanded="true" signature="5738:6240" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/obsah/schvaleni.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sablony/sablona1.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-167">
+          <caret line="55" column="19" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="86" column="29" selection-start-line="86" selection-start-column="29" selection-end-line="86" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/obsah/menu.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1219">
+          <caret line="111" column="96" selection-start-line="111" selection-start-column="96" selection-end-line="111" selection-end-column="96" />
+          <folding>
+            <marker date="1481628355130" expanded="true" signature="1478:1956" ph="..." />
+            <marker date="1481628355130" expanded="true" signature="1518:1956" ph="..." />
+            <marker date="1481628355130" expanded="true" signature="1595:1708" ph="..." />
+            <marker date="1481628355130" expanded="true" signature="1750:1956" ph="..." />
+            <marker date="1481628355130" expanded="true" signature="3504:3846" ph="..." />
+            <marker date="1481628355130" expanded="true" signature="4296:4796" ph="..." />
+            <marker date="1481628355130" expanded="true" signature="4336:4796" ph="..." />
+            <marker date="1481628355130" expanded="true" signature="4413:4526" ph="..." />
+            <marker date="1481628355130" expanded="true" signature="4568:4796" ph="..." />
+            <marker date="1481628355130" expanded="true" signature="4868:5180" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/obsah/kontakt.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="390" selection-start-line="17" selection-start-column="390" selection-end-line="17" selection-end-column="390" />
+          <folding>
+            <marker date="1481628810735" expanded="true" signature="41:974" ph="..." />
+            <marker date="1481628810735" expanded="true" signature="928:936" ph="..." />
           </folding>
         </state>
       </provider>

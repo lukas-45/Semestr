@@ -42,8 +42,8 @@ if ($page == ""){
     // volba obsahu pro stranku
     if ($page == "uvod")
         $filename = "obsah/uvod.inc.php";
-    else if ($page == "konference")
-        $filename = "obsah/konference.php";
+    else if ($page == "kontakt")
+        $filename = "obsah/kontakt.inc.php";
     else if ($page == "registrace")
         $filename = "obsah/registrace.inc.php";
     else if ($page == "prihlaseni")
@@ -84,9 +84,9 @@ if ($page == ""){
     // seznam vsech moznych stranek
     $pages = array();
     $pages["uvod"] = "Uvod";
-    $pages["konference"] = "O konferenci";
-    $pages["registrace"] = "registrace";
-    $pages["prihlaseni"] = "prihlaseni";
+    $pages["kontakt"] = "Kontakt";
+    $pages["registrace"] = "Registrace";
+    $pages["prihlaseni"] = "Prihlaseni";
     $pages["nadpis"] = $page;
 
 

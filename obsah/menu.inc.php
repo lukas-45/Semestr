@@ -60,7 +60,7 @@ foreach ($cont->prihlaseny_uzivatel as $ite) {
             </div>
             <ul class=\"nav navbar-nav\">
                 <li class = \"blog-nav-item\"><a href=\"". $cont->makeUrl('uvod')."\">Úvod</a></li>
-                <li class = \"blog-nav-item\"><a href=\"". $cont->makeUrl('konference')."\">O konferenci</a></li>";
+                <li class = \"blog-nav-item\"><a href=\"". $cont->makeUrl('kontakt')."\">Kontakt</a></li>";
                 if($jmeno['prava'] == 3){
                     if(($page == 'recenze') || ($page == 'mojeprispevky') || ($page == 'prispevky') || ($page == 'prihlaseni') || ($page == 'registrace')) {
                         header('Location: '.$cont->makeUrl("401"));
@@ -109,7 +109,7 @@ foreach ($cont->prihlaseny_uzivatel as $ite) {
             </div>
             <ul class=\"nav navbar-nav\">
                 <li class = \"blog-nav-item\"><a href=\"". $cont->makeUrl('uvod')."\">Úvod</a></li>
-                <li class = \"blog-nav-item\"><a href=\"". $cont->makeUrl('konference')."\">O konferenci</a></li>
+                <li class = \"blog-nav-item\"><a href=\"". $cont->makeUrl('kontakt')."\">Kontakt</a></li>
                 </ul>";
                 $menu .= " <ul class=\"nav navbar-nav navbar-right\">
                 <li><a href=\"". $cont->makeUrl('registrace')."\"><span class=\"glyphicon glyphicon-user\"></span> Registrace </a></li>
