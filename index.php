@@ -70,6 +70,8 @@ if ($page == ""){
         $filename = "obsah/schvaleni.inc.php";
     else if ($page == "hodnotit")
         $filename = "obsah/hodnotit.inc.php";
+    else if ($page == "pdf")
+        $filename = "obsah/otevritPDF.php";
     else if ($page == "401")
         $filename = "obsah/401.inc.php";
     else

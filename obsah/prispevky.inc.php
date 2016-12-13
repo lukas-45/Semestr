@@ -69,29 +69,37 @@ $subpage = @$_REQUEST["subpage"];
         else if ($bool)
         {
             if(isset($subpage)){
-                if($_FILES["file1"]["tmp_name"]!=null) {
-                    move_uploaded_file($_FILES["file1"]["tmp_name"], "public/pdf/" . $_FILES["file1"]["name"]);
-                    rename("public/pdf/" .$_FILES["file1"]["name"], "public/pdf/" .$nacteni_prispevku["id_clanky"].".pdf");
-                }
                 $novy = $newPrispevek->UpdateClanku($items["abstrakt"], $items["autor_id"],$subpage);
                 $novy2 = $newPrispevek->UpdatePrispevku($items["nazev"], $items["autor_id"],$subpage);
+                $nacteni_prispevku = $newPrispevek->LoadAllPrispevky();
+                if ($nacteni_prispevku != null) {
+                    foreach ($nacteni_prispevku as $nacteni_prispevku) {
+                        if($items["nazev"] == $nacteni_prispevku["nazev"] && $items["autor_id"] == $nacteni_prispevku["autor_id"]){
+                            if($_FILES["file1"]["tmp_name"]!=null) {
+                                move_uploaded_file($_FILES["file1"]["tmp_name"], "public/pdf/" . $_FILES["file1"]["name"]);
+                                rename("public/pdf/" .$_FILES["file1"]["name"], "public/pdf/" .$nacteni_prispevku["id_clanky"].".pdf");
+                            }
+                        }
+                    }
+                    }
 
 
-                $cont->makeUrl('odstraneni;'.$items["nazev"]);
-                header('Location: '.$cont->makeUrl('odstraneni;'.$nacteni_prispevku["nazev"]));
-               header('Location: '.$cont->makeUrl('mojeprispevky'));
+               // $cont->makeUrl('odstraneni;'.$items["nazev"]);
+               // header('Location: '.$cont->makeUrl('odstraneni;'.$nacteni_prispevku["nazev"]));
+                header('Location: '.$cont->makeUrl('mojeprispevky'));
                 echo "<div class=\"alert alert-success alert-dismissable fade in\">
                 <a href=\"#\" class=\"close\" data-dismiss=\"alert\" aria-label=\"close\">&times;</a>
                 <strong>Úspěšné dokončení!</strong> Příspěvek byl úspěšně upraven.
                 </div>";
             }
             else {
-                if($_FILES["file1"]["tmp_name"]!=null) {
-                    move_uploaded_file($_FILES["file1"]["tmp_name"], "public/pdf/" . $_FILES["file1"]["name"]);
-                    rename("public/pdf/" .$_FILES["file1"]["name"], "public/pdf/" .$nacteni_prispevku["id_clanky"].".pdf");
-                }
+
 
                 $novy = $newPrispevek->InsertPrispevku($items);
+                if($_FILES["file1"]["tmp_name"]!=null) {
+                    move_uploaded_file($_FILES["file1"]["tmp_name"], "public/pdf/" . $_FILES["file1"]["name"]);
+                    rename("public/pdf/" .$_FILES["file1"]["name"], "public/pdf/" .$novy.".pdf");
+                }
                 echo "<div class=\"alert alert-success alert-dismissable fade in\">
                 <a href=\"#\" class=\"close\" data-dismiss=\"alert\" aria-label=\"close\">&times;</a>
                 <strong>Úspěšné dokončení!</strong> Příspěvek byl úspěšně vytvořen.

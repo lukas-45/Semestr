@@ -9,7 +9,7 @@
     $prispevky->Connect();
     $nacteni_prispevku = $prispevky->LoadAllPrispevky();
     $count = 0;
-
+    $cont = new control();
 
 
 if ($nacteni_prispevku != null) {
@@ -27,8 +27,14 @@ if ($nacteni_prispevku != null) {
 
 
                 echo  "<h2 class=\"featurette-heading\">$nacteni_prispevku[nazev] </h2>
-                    <p class=\"lead\">$nacteni_prispevku[abstrakt]</p>
-                </div>";
+                    <p class=\"lead\">$nacteni_prispevku[abstrakt]</p>";
+            $file = 'public/pdf/'.$nacteni_prispevku["id_clanky"].".pdf";
+            if(file_exists($file)) {
+                echo "<a href=\"". $cont->makeUrl('pdf;'.$nacteni_prispevku["id_clanky"])."\">Priloha_$nacteni_prispevku[id_clanky].pdf</a>";
+
+            }
+
+              echo "</div>";
             if($count % 2 == 0){
                 echo "<div class=\"col-md-5\">";
             }
