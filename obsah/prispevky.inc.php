@@ -9,12 +9,17 @@ include_once("inc/functions.inc.php");
  * Date: 05.12.2016
  * Time: 22:40
  */
-$prispevky = new Prispevky();
-$prispevky->Connect();
-$nacteni_prispevku = $prispevky->LoadAllPrispevky();
-$uzivatel = $_SESSION['uzivatel'];
-$cont = new control();
-$subpage = @$_REQUEST["subpage"];
+
+    /**
+     * stara se o pridavani a upravovani prispevku
+     */
+
+    $prispevky = new Prispevky();
+    $prispevky->Connect();
+    $nacteni_prispevku = $prispevky->LoadAllPrispevky();
+    $uzivatel = $_SESSION['uzivatel'];
+    $cont = new control();
+    $subpage = @$_REQUEST["subpage"];
 
 
 
@@ -30,14 +35,16 @@ $subpage = @$_REQUEST["subpage"];
         $file = array();
         $file = $_FILES['file1'];
 
-      //  echo '<pre>';
-     //  print_r($_FILES);
-       // print_r($_POST);
+
     $nacteni_prispevku = $newPrispevek->LoadAllPrispevky();
     $pLength = strlen($items["nazev"]);
 
 
         $bool = true;
+        /**
+         * nacte vsechny prispevky a zjistuje zda nove vytvoreny nema stejny nazev jako jiz existujici od stejneho autora
+         * a zda nazev ma alespon dva znaky
+        */
         if ($nacteni_prispevku != null) {
             foreach ($nacteni_prispevku as $nacteni_prispevku) {
                 if ($nacteni_prispevku["nazev"] == $items["nazev"] && $nacteni_prispevku["autor_id"] == $items["autor_id"]) {
@@ -68,6 +75,7 @@ $subpage = @$_REQUEST["subpage"];
         }
         else if ($bool)
         {
+            //pokud v url existuje subpage, potom se upravuje prispevek
             if(isset($subpage)){
                 $novy = $newPrispevek->UpdateClanku($items["abstrakt"], $items["autor_id"],$subpage);
                 $novy2 = $newPrispevek->UpdatePrispevku($items["nazev"], $items["autor_id"],$subpage);
@@ -92,6 +100,7 @@ $subpage = @$_REQUEST["subpage"];
                 <strong>Úspěšné dokončení!</strong> Příspěvek byl úspěšně upraven.
                 </div>";
             }
+            //jinak se vklada novy prispevek
             else {
 
 
@@ -110,6 +119,7 @@ $subpage = @$_REQUEST["subpage"];
 
 
 }
+        //jestlize v url existuje subpage  jsou do textovych poli vlozeny data z upravovaneho prispevku
         if(isset($subpage)){
             echo "<div class=\"container\">
             <h3>Úprava příspěvku</h3>
@@ -149,6 +159,7 @@ $subpage = @$_REQUEST["subpage"];
         </div>";
 
     }
+    //jinak jsou textova pole prazdna
     else{
         echo "<div class=\"container\">
         <h3>Vytvoření příspěvku</h3>

@@ -5,6 +5,10 @@
  * Date: 09.12.2016
  * Time: 22:42
  */
+
+/**
+ * slouzi k odeslani hodnoceni od recenzentu
+ */
     include_once("inc/db_pdo.class.php");
     include_once("inc/Prispevky.class.php");
     include_once("inc/hodnoceni.class.php");
@@ -31,6 +35,7 @@
     $param = @$_REQUEST["param"];
     $recenzent = $_SESSION['uzivatel'];
 
+    //najde prislusne hodnoceni v databazi a opravi jej podle zadani znamek od recenzenta
     if ($nacteni_prispevku != null) {
         foreach ($nacteni_prispevku as $nacteni_prispevku) {
             if ($nacteni_prispevku["nazev"] == $subpage) {

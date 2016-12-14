@@ -11,7 +11,10 @@
     include_once("inc/settings.inc.php");
     include_once("inc/functions.inc.php");
 
-
+    /**
+     * umoznuje adminovi pridat prispevky recenzetovi,
+     * recenzenta vybere a odesle mu dany prispevek
+     */
 
     $prispevky = new Prispevky();
     $prispevky->Connect();

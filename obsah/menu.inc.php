@@ -5,32 +5,22 @@
  * Date: 02.12.2016
  * Time: 14:01
  */
-include_once("inc/db_pdo.class.php");
-include_once("inc/DBUzivatele.class.php");
-include_once("inc/settings.inc.php");
-include_once("inc/functions.inc.php");
-include_once("Controller/control_login.class.php");
 
-$cont = new control();
-$cont_login = new control_login();
-/*if(isset($_POST["prihlas-btn"])) {
-    echo "<div class=\"alert alert-danger alert-dismissable fade in\">
-                <a href=\"#\" class=\"close\" data-dismiss=\"alert\" aria-label=\"close\">&times;</a>
-                <strong>Chyba!</strong> Uživatel nebyl vytvořen, uživatelské jméno nesplňuje podmínky.
-                    Délka uživatelského jména musí být od 5 do 15 znaků.
-                 </div>";
+    /**
+     * menu
+     */
+    include_once("inc/db_pdo.class.php");
+    include_once("inc/DBUzivatele.class.php");
+    include_once("inc/settings.inc.php");
+    include_once("inc/functions.inc.php");
+    include_once("Controller/control_login.class.php");
 
-}*/
-/*$cont->getSign();
-foreach ($cont->prihlaseny_uzivatel as $ite) {
-    echo $ite;
-    echo "<br>";
-}*/
-
-
+    $cont = new control();
+    $cont_login = new control_login();
 
         $page = @$_REQUEST["page"];
         $cont_login->getSign();
+        //zjisti opravneni prihlaseneho uzivatele
         if(isset($_SESSION['uzivatel'])) {
 
             $jmeno = $_SESSION['uzivatel'];
@@ -50,6 +40,7 @@ foreach ($cont->prihlaseny_uzivatel as $ite) {
             {
                 $prava = "";
             }
+            //vypise menu a zjisti zda na zadane url ma uzivatel pravo
             $menu = "<nav class=\"navbar navbar-inverse\">
         <div class=\"container-fluid\">
             
@@ -100,7 +91,7 @@ foreach ($cont->prihlaseny_uzivatel as $ite) {
 
                 }
                 $menu = "<nav class=\"navbar navbar-inverse\">
-        <div class=\"container-fluid\">
+                         <div class=\"container-fluid\">
             
         
             

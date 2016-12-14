@@ -5,6 +5,9 @@
  * Date: 09.12.2016
  * Time: 20:54
  */
+    /**
+     * schvali prispevek na pokyn admina
+     */
     include_once("inc/db_pdo.class.php");
     include_once("inc/Prispevky.class.php");
     include_once("inc/settings.inc.php");

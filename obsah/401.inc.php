@@ -1,9 +1,14 @@
+
 <?php
 /**
  * Created by PhpStorm.
  * User: Lukáš
  * Date: 07.12.2016
  * Time: 10:50
+ */
+
+/**
+ * errorová stránka 401
  */
 $cont = new control();
     echo"<div class=\"container\">

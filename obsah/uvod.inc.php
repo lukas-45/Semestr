@@ -4,7 +4,10 @@
     include_once("inc/Prispevky.class.php");
     include_once("inc/settings.inc.php");
     include_once("inc/functions.inc.php");
-
+    /**
+     * na uvodni strance vypise prispevky,
+     * ktere jsou adminem schvaleny
+     */
     $prispevky = new Prispevky();
     $prispevky->Connect();
     $nacteni_prispevku = $prispevky->LoadAllPrispevky();

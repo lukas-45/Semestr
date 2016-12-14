@@ -2,11 +2,11 @@
 
 global $subpage;
 // nacteni souboru
-include_once("inc/db_pdo.class.php");
-include_once("inc/DBUzivatele.class.php");
-include_once("inc/settings.inc.php");
-include_once("inc/functions.inc.php");
-include_once("Controller/control_login.class.php");
+    include_once("inc/db_pdo.class.php");
+    include_once("inc/DBUzivatele.class.php");
+    include_once("inc/settings.inc.php");
+    include_once("inc/functions.inc.php");
+    include_once("Controller/control_login.class.php");
 
 /**
  * Created by PhpStorm.
@@ -14,14 +14,13 @@ include_once("Controller/control_login.class.php");
  * Date: 02.12.2016
  * Time: 14:42
  */
-
+    /**
+     * prihlasi uzivatele
+     */
         $cont = new control_login();
         $cont->getSign();
         $cont->getVypis();
-/*foreach ($cont->prihlaseny_uzivatel as $ite) {
-    echo $ite;
-    echo "<br>";
-}*/
+
     echo "<div class=\"container\" >    
         
     <div id=\"loginbox\" class=\"mainbox col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3\"> 

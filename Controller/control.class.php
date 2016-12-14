@@ -12,6 +12,12 @@ class control
 {
     protected $twig = null;
 
+    /**
+     * funkce prida twig a do neho prida sablonu1.twig
+     * @param $menu
+     * @param $obsah
+     * @param $page
+     */
     public function Twig($menu, $obsah, $page)
     {
         // Twig stahnout z githubu - klidne staci zip a dat do slozky twig-master
@@ -40,7 +46,11 @@ class control
         echo $template->render($template_params);
     }
 
-
+    /**
+     * vytvori url
+     * @param $page
+     * @return string
+     */
     public function makeUrl($page)
     {
         $parts = explode(';', $page);

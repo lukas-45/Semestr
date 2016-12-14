@@ -5,6 +5,12 @@
  * Date: 07.12.2016
  * Time: 12:52
  */
+
+    /***
+     * umoznuje adminovi mazat prispevky od autoru
+     * pokud jsou jiz prispevky dany k recenzi,
+     * smaze nejdrive vsechny recenze
+     */
     include_once("inc/db_pdo.class.php");
     include_once("inc/Prispevky.class.php");
     include_once("inc/hodnoceni.class.php");

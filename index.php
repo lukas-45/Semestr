@@ -3,41 +3,29 @@ session_start();
 include_once("Controller/control.class.php");
 include_once("obsah/menu.inc.php");
 define('ROOT', __DIR__ . DIRECTORY_SEPARATOR);
-/*function makeUrl($page) {
-    $parts = explode(';',$page);
-    $subpage = isset($parts[1])? '&subpage=' . $parts[1] : '';
-    $param = isset($parts[2])? '&param=' . $parts[2] : '';
 
-    return 'index.php?page=' . $parts[0] . $subpage . $param;
-}
-*///print_r(parse_url(getPage()));
-
-// prihlaseni uzivatele
-
-function phpWrapperFromFile($filename)
-{
-    ob_start();
-
-    if (file_exists($filename) && !is_dir($filename))
+    function phpWrapperFromFile($filename)
     {
-        include($filename);
-    }
+        ob_start();
 
-    // nacte to z outputu
-    $obsah = ob_get_clean();
-    return $obsah;
-}
-$page = @$_REQUEST["page"];
-$subpage = @$_REQUEST["subpage"];
-//default je uvod
-if ($page == ""){
-    $page = "uvod";
-}
+        if (file_exists($filename) && !is_dir($filename))
+        {
+            include($filename);
+        }
+
+             // nacte to z outputu
+            $obsah = ob_get_clean();
+            return $obsah;
+        }
+        $page = @$_REQUEST["page"];
+        $subpage = @$_REQUEST["subpage"];
+        //default je uvod
+        if ($page == ""){
+            $page = "uvod";
+        }
 
 
 
-
-//echo "page je: $page ";
 
     // volba obsahu pro stranku
     if ($page == "uvod")
@@ -91,55 +79,13 @@ if ($page == ""){
 
 
 
-// Twig stahnout z githubu - klidne staci zip a dat do slozky twig-master
-// kontrolu provedete dle umisteni souboru Autoloader.php, ktery prikladam pro kontrolu
-$cont = new control();
-/*// nacist twig - kopie z dokumentace
-require_once ROOT . 'twig-master/lib/Twig/Autoloader.php';
-Twig_Autoloader::register();
-// cesta k adresari se sablonama - od index.php
-$loader = new Twig_Loader_Filesystem(ROOT . 'sablony');
-$twig = new Twig_Environment($loader); // takhle je to bez cache
-$makeUrl = new Twig_SimpleFunction('makeUrl', 'makeUrl');
-$twig->addFunction($makeUrl);
-$template = $twig->loadTemplate('sablona1.twig');
-// nacist danou sablonu z adresare
-//$template = $twig->loadTemplate('sablona1.twig');
-*/
+    // Twig stahnout z githubu - klidne staci zip a dat do slozky twig-master
+    // kontrolu provedete dle umisteni souboru Autoloader.php, ktery prikladam pro kontrolu
+    $cont = new control();
 
 
+    $cont->Twig($menu, $obsah, $page);
 
 
-
-
-$cont->Twig($menu, $obsah, $page);
-
-
-/*
-// render vrati data pro vypis nebo display je vypise
-// v poli jsou data pro vlozeni do sablony
-$template_params = array();
-$template_params["menu"] = $menu;
-$template_params["obsah"] = $obsah;
-$template_params["nadpis"] = $page;
-echo $template->render($template_params);
-*/
-
-/*if(getPage() == ''){
-    echo $twig->render('uvod.twig',['menu' => $template_params]);
-}
-else if(getPage() == 'uvod'){
-    echo $twig->render('uvod.twig',['menu' => $template_params]);
-}
-else if(getPage() == 'konference'){
-    echo $twig->render('konference.twig',['menu' => $template_params]);
-}
-else if(getPage() == 'registrace') {
-    echo $twig->render('registrace.twig',['menu' => $template_params]);
-}
-else {
-    echo $twig->render('404.twig',['menu' => $template_params]);
-}
-*/
 
 

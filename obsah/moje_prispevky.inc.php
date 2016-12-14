@@ -5,6 +5,12 @@
  * Date: 05.12.2016
  * Time: 23:19
  */
+
+/**
+ * stranka, ke ktere ma pristup pouze autor
+ * v tabulce ma vypsane prispevky, ktere napsal
+ * a muze je upravovat a mazat
+ */
 include_once("inc/db_pdo.class.php");
 include_once("inc/Prispevky.class.php");
 include_once("inc/settings.inc.php");

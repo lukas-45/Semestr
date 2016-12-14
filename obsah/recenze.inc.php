@@ -5,6 +5,12 @@
  * Date: 05.12.2016
  * Time: 22:40
  */
+
+    /**
+     * stranka, kterou vidi pouze recenzenti
+     * v tabulce vidi prispevky, ktere maji ohodnotit
+     * v poslednim sloupecku maji uvedeno zda jiz ohodnotili prispevek
+     */
     include_once("inc/db_pdo.class.php");
     include_once("inc/Prispevky.class.php");
     include_once("inc/hodnoceni.class.php");

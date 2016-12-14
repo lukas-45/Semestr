@@ -6,6 +6,11 @@
  * Date: 04.12.2016
  * Time: 23:02
  */
+
+/**
+ * Class control_login
+ * Kontroler pro prihlaseni
+ */
 class control_login
 {
     public $items = null;
@@ -14,6 +19,11 @@ class control_login
     public $vypis;
     public $prihlasen = false;
     public $kontrola_prihlaseni;
+
+    /**
+     * vrati url
+     * @return mixed
+     */
     public function getPage()
     {
         if (isset($_REQUEST["page"])) {
@@ -22,6 +32,9 @@ class control_login
         return @$pageURL;
     }
 
+    /**
+     * kontroluje zda je prihlaseni v poradku
+     */
     public function getSign()
     {
         if (isset($_POST["submit"])) {
@@ -68,6 +81,10 @@ class control_login
 
 
     }
+
+    /**
+     * funkce pro vypis alertu, podle uspesneho/neuspesneho prihlaseni
+     */
     function getVypis(){
         if($this->vypis==1){
             echo "<div id=\"loginbox\"  class=\"mainbox col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3\"> 

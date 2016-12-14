@@ -1,7 +1,15 @@
 <?php
 
+/**
+ * Class DBUzivatele
+ * trida, ktera dedi od db_pdo.class.php
+ */
 class DBUzivatele extends db_pdo
 {
+    /**
+     * Nacte vsechny uzivatele
+     * @return mixed
+     */
     public function LoadAllUzivatele()
     {
         $table_name = "uzivatel";
@@ -12,6 +20,11 @@ class DBUzivatele extends db_pdo
         $uzivatele = $this->DBSelectAll($table_name, $columns, $where);
         return $uzivatele;
     }
+
+    /***
+     * nacte všechny uzivatele, kteri jsou autory
+     * @return mixed
+     */
     public function LoadAutoriUzivatele()
     {
         $table_name = "uzivatel";
@@ -22,6 +35,11 @@ class DBUzivatele extends db_pdo
         $uzivatele = $this->DBSelectAll($table_name, $columns, $where);
         return $uzivatele;
     }
+
+    /**
+     * nacte vsechny uzivatele, kteri jsou recenzenty
+     * @return mixed
+     */
     public function LoadRecenzentiUzivatele()
     {
         $table_name = "uzivatel";
@@ -32,6 +50,11 @@ class DBUzivatele extends db_pdo
         $uzivatele = $this->DBSelectAll($table_name, $columns, $where);
         return $uzivatele;
     }
+
+    /**
+     * nacte vsechny uzivatele, ale vybere pouze sloupecky uzivatelske_jmeno a email
+     * @return mixed
+     */
     public function LoadNickEmailUzivatele()
     {
         $table_name = "uzivatel";
@@ -42,6 +65,12 @@ class DBUzivatele extends db_pdo
         $uzivatele = $this->DBSelectAll($table_name, $columns, $where);
         return $uzivatele;
     }
+
+    /**
+     * vlozi noveho uzivatele do DB
+     * @param $items
+     * @return mixed
+     */
     public function InsertUzivatele($items){
         $table_name = "uzivatel";
 

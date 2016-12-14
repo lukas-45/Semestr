@@ -1,4 +1,7 @@
 <?php
+/**
+ * stranka s kontaktem na konferenci + mapa
+ */
 
     echo "<div class=\"blog-post\">
         <h2 class=\"blog-post-title\">Kontakt</h2>

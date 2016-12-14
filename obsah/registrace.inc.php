@@ -5,65 +5,13 @@
     include_once("inc/settings.inc.php");
     include_once("inc/functions.inc.php");
 
-  /*  // prihlaseni uzivatele
-    $key_my_user = "predmety_user";
-    if(isset($_SESSION[$key_my_user]))
-    {
-        //muzu provest
-    }
-    else $_SESSION[$key_my_user] = array();
-
-    $prihlasen = false;
-    if(isset($_SESSION[$key_my_user]["login"]))
-    {
-        $prihlasen = true;
-    }
-    printr($_POST);
-    $action = @$_POST["action"]."";
-    $user = @$_POST["user"];
-    if($action == "login_go")
-    {
-        echo "uzivatel: ";
-        printr($user);
-
-        if(trim($user["login"]) == "admin" && trim($user["heslo"]) == "admin")
-        {
-            $_SESSION[$key_my_user]["login"] = $user["login"];
-            $prihlasen = true;
-        }
-    }
-
-    if($prihlasen)
-    {
-        echo "<h1>Přihlášený uživatel</h1>";
-    }
-    else
-    {
-        echo "<h1>Nepřihlášený uživatel</h1>";
-
-        echo "<form method=\"post\">
-                            <input type='hidden' name='action' value = 'login_go'/>
-                            Login: <input type='text' name='user[login]'/>
-                            Heslo: <input type='text' name='user[heslo]'/>
-                            <input type='submit' value='Přihlásit'>
-                            </form>";
-    }
-
-
-    $uzivatele = new uzivatele();
-    $uzivatele->Connect();
-
-    $seznam_uzivatelu = $uzivatele->LoadAllUzivatele();
-  //  printr($seznam_uzivatelu);
-
-    if ($seznam_uzivatelu != null)
-    {
-        foreach($seznam_uzivatelu as $uzivatele)
-        {
-           // echo "id: $uzivatele[id_uzivatel], jmeno: $uzivatele[jmeno]<br/>";
-        }
-    }
-*/
+    /**
+     * stranka s formularem pro registrace
+     * umoznuje uzivateli se zaregistrovat
+     * kotroluje zda uzivatelske jmeno uz neexistuje
+     * nebo zda neexistuje email
+     * a kotroluje shodnost obou hesel
+     */
 if(isset($_POST["login-btn"])) {
     $newUzivatel = new DBUzivatele();
     $newUzivatel->Connect();
@@ -210,29 +158,3 @@ echo "<form class=\"form-horizontal\" action=\"\" method=\"POST\">
             </div>
         </fieldset>
     </form>";
-
-
-
-
-
-
-
-$subpage = @$_REQUEST["subpage"];
-
-if ($subpage == "")
-{
-    // zobrazit reg. formular
-}
-else if ($subpage == "registrace_go"){
-    // proved registraci a vypis vysledek
-
-    // 1. vytvorim objekt - napr. uzivatele
-
-    // 2. zavolam funkci InsertUser(data z postu)
-    // $id = ...
-    //
-
-    // if ($id > 0) ...
-        // else nepovedlo se
-
-}

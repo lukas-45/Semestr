@@ -393,7 +393,14 @@ class db_pdo
 					echo "SQL dotaz: $query";
 				}
 	}
-	
+
+    /**
+     * aktualizave nazvu prispevku
+     * @param $table_name
+     * @param $nazev
+     * @param $autor
+     * @param $nadpis
+     */
 	public function DBUpdateNazvu($table_name, $nazev, $autor, $nadpis)
     {
         // PDO - MySQL
@@ -434,6 +441,13 @@ class db_pdo
         }
 	}
 
+    /**
+     * aktualizace clanku
+     * @param $table_name
+     * @param $clanek
+     * @param $autor
+     * @param $nadpis
+     */
     public function DBUpdateClanku($table_name, $clanek, $autor, $nadpis)
     {
         // PDO - MySQL
@@ -474,6 +488,16 @@ class db_pdo
         }
     }
 
+    /**
+     * prida hodnoceni
+     * @param $table_name
+     * @param $uzivatel
+     * @param $clanek
+     * @param $body1
+     * @param $body2
+     * @param $body3
+     * @param $recenzent
+     */
     public function DBUpdateHodnoceni($table_name, $uzivatel, $clanek, $body1, $body2, $body3, $recenzent)
     {
         // PDO - MySQL
@@ -514,6 +538,12 @@ class db_pdo
         }
     }
 
+    /**
+     * schvali prispevek
+     * @param $table_name
+     * @param $autor
+     * @param $nadpis
+     */
     public function DBUpdateSchvaleno($table_name, $autor, $nadpis)
     {
         // PDO - MySQL

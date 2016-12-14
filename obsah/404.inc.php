@@ -1,4 +1,7 @@
 <?php
+/**
+ * errorová stránka 404
+ */
 $cont = new control();
     echo"<div class=\"container\">
     <div class=\"row\">

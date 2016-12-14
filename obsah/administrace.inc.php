@@ -6,6 +6,10 @@
  * Time: 22:40
  */
 
+/**
+ * stranka administrace, ktera je viditelna pouze pro admina
+ */
+
     include_once("inc/db_pdo.class.php");
     include_once("inc/Prispevky.class.php");
     include_once("inc/hodnoceni.class.php");
@@ -21,7 +25,9 @@
     $uzivatel = $_SESSION['uzivatel'];
     $recenzenti = $uzivatele->LoadRecenzentiUzivatele();
 
-
+//vytvori tabulky: pocet tabulek je podle poctu autoru
+//v kazde tabulce jsou prispevky od jednoho autora
+//admin je muze mazat, schvalovat a poslat recenzentum na hodnoceni
     if ($autori != null) {
         foreach ($autori as $autori) {
             $prispevky = new Prispevky();
@@ -91,7 +97,8 @@
         }
     }
 
-
+//vytvori dalsi tabulky, tentokrat je pocet podle poctu recenzentu
+//v nich administrator vidi hodnoceni od recenzentu
 if ($recenzenti != null) {
     foreach ($recenzenti as $recenzenti) {
         $prispevky = new Prispevky();
